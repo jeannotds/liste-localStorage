@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loclStorage</title>
+</head>
+<body>
+    <script>
+        localStorage.clear()
+        localStorage.setItem('1', 'jeannot')
+        localStorage.setItem('2', 'benny')
+        localStorage.setItem('3', 'levi')
+        localStorage.setItem('4','Hans')
+
+        // localStorage.removeItem('3')
+
+        // console.log(localStorage.length)
+
+        // for(let key in localStorage){
+        //     console.log(key)
+        // }
+        // let key = 0
+       
+        for(let i = 0; i<localStorage.length; i++){
+            let key = localStorage.key(i)
+            console.log(key, localStorage.getItem(key))
+        }
+
+        // window.document.addEventListener('storage', (e)=>{
+        //     console.log(e)
+        // })
+
+        // window.onstorage = event=>{
+        //     console.log(event)
+        // }
+
+    </script>
+</body>
+</html>
